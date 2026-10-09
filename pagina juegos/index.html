@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consta | mis juegos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__contenido">
+            <a href="#inicio" class="logo">consta<span>.</span></a>
+            <button class="boton-menu" id="botonMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="navegacion" id="menu" aria-label="Menu principal">
+                <ul class="navegacion__lista">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#juegos">Mis juegos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero__contenido">
+                <p class="hero__etiqueta">jugador de PC</p>
+                <h1 class="hero__titulo">Hola, soy consta (Argentos2017)</h1>
+                <p class="hero__texto">Juego desde que era chico y esta es mi pagina con los juegos que paso mas tiempo jugando. Mi favorito del momento es Arc Raiders.</p>
+                <a href="#juegos" class="boton">Ver mis juegos</a>
+            </div>
+        </section>
+
+        <section class="seccion" id="sobre-mi">
+            <h2 class="seccion__titulo">Sobre mi</h2>
+            <div class="sobre-mi">
+                <div class="sobre-mi__texto">
+                    <p>Mi primer juego fue Minecraft, y lo juego desde chico. Despues vinieron los shooters y los juegos competitivos.</p>
+                    <p>Con Fortnite arranque en 2017 y sigo jugandolo. Hoy juego todo en PC.</p>
+                </div>
+                <dl class="datos">
+                    <div class="datos__item">
+                        <dt>Plataforma</dt>
+                        <dd>PC</dd>
+                    </div>
+                    <div class="datos__item">
+                        <dt>Primer juego</dt>
+                        <dd>Minecraft</dd>
+                    </div>
+                    <div class="datos__item">
+                        <dt>Fortnite desde</dt>
+                        <dd>2017</dd>
+                    </div>
+                    <div class="datos__item">
+                        <dt>Favorito</dt>
+                        <dd>Arc Raiders</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="seccion seccion--oscura" id="juegos">
+            <div class="seccion__interior">
+                <h2 class="seccion__titulo">Mis juegos</h2>
+                <p class="seccion__subtitulo">Escribi el nombre o el genero y las tarjetas se filtran solas.</p>
+
+                <div class="buscador">
+                    <label for="campoBusqueda" class="buscador__etiqueta">Buscar</label>
+                    <input type="search" id="campoBusqueda" class="buscador__campo" placeholder="Ej: shooter, 2017, Valorant..." autocomplete="off">
+                </div>
+
+                <div class="grilla" id="grilla">
+                    <article class="tarjeta">
+                        <img src="img/minecraft.jpg" data-nombre="minecraft" alt="Imagen de Minecraft" class="tarjeta__imagen">
+                        <div class="tarjeta__cuerpo">
+                            <h3 class="tarjeta__titulo">Minecraft</h3>
+                            <p class="tarjeta__datos"><span class="etiqueta">Sandbox</span><span>2011</span></p>
+                            <p class="tarjeta__texto">Juego de cubos y supervivencia.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="img/fortnite.jpg" data-nombre="fortnite" alt="Imagen de Fortnite" class="tarjeta__imagen">
+                        <div class="tarjeta__cuerpo">
+                            <h3 class="tarjeta__titulo">Fortnite</h3>
+                            <p class="tarjeta__datos"><span class="etiqueta">Battle royale</span><span>2017</span></p>
+                            <p class="tarjeta__texto">El battle royale mas conocido del mundo.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="img/rainbowsix.jpg" data-nombre="rainbowsix" alt="Imagen de Rainbow Six Siege" class="tarjeta__imagen">
+                        <div class="tarjeta__cuerpo">
+                            <h3 class="tarjeta__titulo">Rainbow Six Siege</h3>
+                            <p class="tarjeta__datos"><span class="etiqueta">Shooter tactico</span><span>2015</span></p>
+                            <p class="tarjeta__texto">Equipos de cinco, ataque y defensa, y personajes tipo Swat.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta tarjeta--favorita">
+                        <img src="img/arcraiders.jpg" data-nombre="arcraiders" alt="Imagen de Arc Raiders" class="tarjeta__imagen">
+                        <div class="tarjeta__cuerpo">
+                            <h3 class="tarjeta__titulo">Arc Raiders</h3>
+                            <p class="tarjeta__datos"><span class="etiqueta etiqueta--favorita">Favorito</span><span>2025</span></p>
+                            <p class="tarjeta__texto">Shooter de extraccion.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="img/valorant.jpg" data-nombre="valorant" alt="Imagen de Valorant" class="tarjeta__imagen">
+                        <div class="tarjeta__cuerpo">
+                            <h3 class="tarjeta__titulo">Valorant</h3>
+                            <p class="tarjeta__datos"><span class="etiqueta">Shooter tactico</span><span>2020</span></p>
+                            <p class="tarjeta__texto">Equipos de 5 que tienen que plantar una bomba y el otro desactivarla, cada personaje tiene diferentes habilidades.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="img/csgo.jpg" data-nombre="csgo" alt="Imagen de CSGO" class="tarjeta__imagen">
+                        <div class="tarjeta__cuerpo">
+                            <h3 class="tarjeta__titulo">CSGO</h3>
+                            <p class="tarjeta__datos"><span class="etiqueta">Shooter tactico</span><span>2012</span></p>
+                            <p class="tarjeta__texto">Un clasico de los shooters competitivos, 2 equipos donde uno tiene que plantar una bomba y el otro desactivarla.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="img/rocketleague.jpg" data-nombre="rocketleague" alt="Imagen de Rocket League" class="tarjeta__imagen">
+                        <div class="tarjeta__cuerpo">
+                            <h3 class="tarjeta__titulo">Rocket League</h3>
+                            <p class="tarjeta__datos"><span class="etiqueta">Deportes</span><span>2015</span></p>
+                            <p class="tarjeta__texto">Futbol, pero con autos.</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="img/roblox.jpg" data-nombre="roblox" alt="Imagen de Roblox" class="tarjeta__imagen">
+                        <div class="tarjeta__cuerpo">
+                            <h3 class="tarjeta__titulo">Roblox</h3>
+                            <p class="tarjeta__datos"><span class="etiqueta">Plataforma de juegos</span><span>2006</span></p>
+                            <p class="tarjeta__texto">Miles de juegos hechos por la comunidad.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="sin-resultados" id="sinResultados" hidden>No hay ningun juego con esa busqueda.</p>
+            </div>
+        </section>
+
+        <section class="seccion" id="contacto">
+            <h2 class="seccion__titulo">Contacto</h2>
+            <div class="contacto">
+                <p class="contacto__texto">Si queres jugar o charlar, escribime por Discord.</p>
+                <div class="contacto__caja">
+                    <span class="contacto__etiqueta">Discord</span>
+                    <span class="contacto__usuario" id="usuarioDiscord">consta_.</span>
+                    <button type="button" class="boton boton--chico" id="botonCopiar">Copiar</button>
+                </div>
+                <p class="contacto__aviso" id="avisoCopiado" role="status"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p class="pie__logo">consta<span>.</span></p>
+        <p class="pie__texto">Proyecto de la escuela, <span id="anio"></span></p>
+        <ul class="pie__enlaces">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#juegos">Juegos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
