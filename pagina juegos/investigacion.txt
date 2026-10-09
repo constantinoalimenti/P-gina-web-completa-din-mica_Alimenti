@@ -1,0 +1,13 @@
+INVESTIGACION: MENU HAMBURGUESA
+
+Como funciona mi menu
+
+En el celular, el menu se esconde y aparece un boton con tres rayitas. Al tocarlo, el menu se abre, y al volver a tocarlo se cierra.
+
+El HTML tiene el boton y la lista de links dentro de un nav. El CSS esconde el nav con max-height en 0. Cuando el nav tiene la clase "abierto", se muestra. El JavaScript solo agrega o saca esa clase cada vez que se hace click en el boton. En pantallas grandes, una media query esconde el boton y muestra los links siempre.
+
+Fuentes consultadas
+
+- ChatGPT
+- Gemini
+- Claude
